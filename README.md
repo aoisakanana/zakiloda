@@ -73,7 +73,7 @@
 git
     ~/.ssh << ssh-keygen
     ~/.ssh << config
-    Host 任意の接続名(hoge)
+    Host 任意の接続名(github.comなど)
     HostName ホスト名
     User ユーザー名
     Port ポート番号
@@ -83,7 +83,7 @@ git
     git init
     git add .
     git commit -m "first commit"
-    git remote add origin git@bitbucket.org:aoisakanana/pokebuilders_pp.git
+    git remote add origin git@github.com:aoisakanana/zakiloda.git
     git push origin master
 heroku
     source <(curl -sL https://cdn.learnenough.com/heroku_install)
