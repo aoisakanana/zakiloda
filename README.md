@@ -22,7 +22,7 @@
     sudo chkconfig ntpd on  
     sudo ntpdate ntp.nict.jp  
     sudo vi /etc/ntp.conf  
-    sudo service ntpd restart  
+    sudo service ntpd restart   
     sudo chkconfig ntpd on  
     sudo hwclock --systohc  
  
