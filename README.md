@@ -110,6 +110,7 @@ deviseインストール
     rails credentials:edit
     Rails.application.credentials.gmail[:user_name] みたいにアクセスできるようになる。
 
+
 * deviseセットアップについてもう少しここに追記予定
 
 
