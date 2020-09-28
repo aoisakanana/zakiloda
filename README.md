@@ -123,4 +123,11 @@ deviseインストール
     git add 対象ファイル
     git commit -m "pull origin and fix conflict"
     git push heroku master
-    
+ここで、heroku側でのCredentialsを追記する必要がある。
+Herokuの環境にはVimが入っていないし、入れても削除されるので、プラグインで入れるところから
+    heroku plugins:install https://github.com/naaman/heroku-vim
+    次に、Master.keyを環境変数に設定する必要がある
+    heroku config:set RAILS_MASTER_KEY='cat config/master.key'
+    Rails Credentials:editのために、EDITORを設定
+    heroku config:set EDITOR="vim"
+    heroku run rails credentials:edit
