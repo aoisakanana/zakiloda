@@ -109,3 +109,4 @@ deviseインストール
     smtp,twitter連携のための設定はrails credentials:edit から記述
     rails credentials:edit
     Rails.application.credentials.gmail[:user_name] みたいにアクセスできるようになる。
+
