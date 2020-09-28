@@ -109,3 +109,17 @@ deviseインストール
     smtp,twitter連携のための設定はrails credentials:edit から記述
     rails credentials:edit
     Rails.application.credentials.gmail[:user_name] みたいにアクセスできるようになる。
+
+* deviseセットアップについてもう少しここに追記予定
+
+
+
+* ここで一度Herokuにデプロイして動作確認
+本番環境でも動くことを確認する
+    git checkout master
+    git pull origin master
+    コンフリクトを直して、マージ。
+    git add 対象ファイル
+    git commit -m "pull origin and fix conflict"
+    git push heroku master
+    
