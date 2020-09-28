@@ -87,6 +87,25 @@ git
     git push origin master  
 heroku  
     source <(curl -sL https://cdn.learnenough.com/heroku_install)  
-    heroku login --interactive  
+    $tar zxf heroku-linux-x64.tar.gz  
+    $ sudo mv heroku /usr/local/  
+    (確認)
+    $ ls /usr/local/heroku/  
+    $echo 'PATH=/usr/local/heroku/bin:$PATH' >> $HOME/.bash_profile  
+    $source $HOME/.bash_profile > /dev/null  
+    heroku login --interactive   
     heroku keys:add ~/.ssh/heroku_id_rsa.pub   
     heroku create  
+
+* user 基本機能 devise設定  
+deviseインストール  
+    yarn install --check-files  がかかるので、webpacker.ymlの設定を変更しておくのを推奨  
+    rails g devise:install  
+    deviseっぽいモデルを作ってくれる
+    rails g devise User  
+    deviseっぽいコントローラ、Viewをつくってくれる
+    rails g devise:controllers Users  
+    rails g devise:views Users  
+    smtp,twitter連携のための設定はrails credentials:edit から記述
+    rails credentials:edit
+    Rails.application.credentials.gmail[:user_name] みたいにアクセスできるようになる。
