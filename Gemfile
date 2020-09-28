@@ -87,6 +87,11 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 
+# devise 日本語化
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+
+
 # for heroku logs
 gem 'rails_12factor'
 
