@@ -1,0 +1,24 @@
+<h1>Pages#index</h1>
+<p>Full Path: <%= "#{request.fullpath}" %></p>
+<p>Path: <%= "#{request.path}" %></p>
+
+<% if @user %>
+
+<p>ログイン済みです！あなたの会員情報は下記ですよ。</p>
+
+<ul>
+    <li><%= @user %></li>
+    <li><%= @user.name %></li>
+    <li><%= @user.username %></li>
+    <li><%= @user.uid %></li>
+    <li><%= @user.provider %></li>
+    <li><%= @user.profile %></li>
+    <li><%= @user.email %></li>
+    <li><%= @user.encrypted_password %></li>
+</ul>
+
+<% else %>
+
+<p>pages#index へようこそ！！ 早速ログインしてみよう！！</p>
+
+<% end %>
